@@ -8,8 +8,10 @@
 <li> JavaScript </li>
 <li> Biblioteca BootStrap </li>
 <li> Jquery </li>
+<li> Figma (Web Design) </li>
 &nbsp
 
+<p> Web Design feito no Figma - por Diogo Leonardo </p>
 <p>💾 Parte da construção do meu portifólio sólido! </p>
 <p>💾 Site com imagens, estilo em css e a criação de um menu responsivo utilizando tecnologias javascript! </p>
 <p>💾 Demonstrando domínio em seções e na organização de um site </p>
