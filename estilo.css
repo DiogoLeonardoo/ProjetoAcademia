@@ -1,0 +1,845 @@
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+    
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+   max-width: 1600px;
+   min-width: 380px;
+} 
+
+.header {
+    max-width: 1600px;
+    min-width: 360px;
+}
+
+.cabecalho {
+    position: relative;
+    width: 100%;
+    height: 98px;
+    left: 0px;
+    top: 0px;
+    background: #D3F3EE;
+    margin: auto;
+    padding: auto;
+    min-width: 320px;
+    max-width: 1600px;
+}
+
+.cabecalho-imagem {
+    position: absolute;
+    width: 98px;
+    height: 101px;
+    left: 30px;
+    top: 11px;      
+}
+
+.list-inline {
+    position: relative;
+    font-family: 'Spicy Rice', cursive;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #2E2424;
+    mix-blend-mode: normal;
+    text-decoration:none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+}
+
+.list-inline li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #000000;
+    margin-top: 8px;
+    
+}
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+    .list-inline {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #BC2C1A;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .list-inline li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display:block;
+    }
+}
+
+.list-inline.active {
+    transform: translateX(0);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+  }
+
+.cabecalho-menu-item {
+    text-decoration: none;
+    color: #2E2424;
+    
+}
+
+.oferta {
+    position: absolute;
+    width: 100%;
+    height: 31px;
+    left: 0px;
+    top: 98px;
+    background: #BC2C1A;
+}
+
+.titulo-oferta {
+    text-align: center;
+    position: relative;
+    top: 3px;
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    
+   
+}
+
+.conteudo {
+    position: absolute;
+    width: 100%;
+    height: 639px;
+    left: 0px;
+    top: 129px;
+    background: #2D2528;
+}
+
+.h1conteudo {
+    position: relative;
+    font-family: 'Spicy Rice', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 132px;
+    color: #FFFFFF;
+    margin: 150px;
+    top: 20px;
+    margin-left: 80px;
+}
+
+.h2conteudo {
+    position: absolute;
+    width: 543px;
+    height: 52px;   
+    left: 140px;
+    top: 300px;
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 45px;
+    color: #DACC3E; 
+    margin-left: 10px;
+ }
+
+ .btn {
+    position: absolute;
+    width: 160px;
+    height: 77px;
+    left: 580px;
+    top: 360px; 
+    background: #C10F0F;
+    font-family:'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    transition-duration: 2s, 2s;
+    transition-delay: 0.5s;
+    transition-timing-function: ease-in;
+ }
+
+ .btn:hover {
+     background-color: #DACC3E;
+     border-radius: 70%;
+}
+
+ .img-rounded {
+    position: absolute;
+    width: 683px;
+    height: 545px;
+    left: 900px;
+    top: 48px;
+ }
+ .rodape-conteudo {
+    background-color:  #7FB7BE;
+    position: absolute;
+    width: 100%;
+    height: 230px;
+    left: 0px;
+    top: 768px;
+ }
+
+ .musc {
+    position: absolute;
+    width: 268px;
+    height: 220px;
+    left: 90px;
+    top: 10px;
+ }
+
+ .aerobi {
+    position: absolute;
+    left: 550px;
+    margin-top: -px;
+    top: 14px;
+    height: 220px;
+    
+ }
+
+ .pula {
+     position: absolute;
+     left: 950px;
+     height: 220px;
+     top: 11px;
+ }
+
+ .natacao {
+     position: absolute;
+     top: 9px;
+     height:250px;
+     left: 1300px;
+     margin-top: -24px;
+ }
+
+ .modalidades {
+    position: absolute;
+    width: 100%;
+    height: 1300px;
+    left: 0px;
+    top: 998px;
+    width: 100%;
+    background-color: #BC2C1A;
+ }
+
+ .natacao2 {
+    position: absolute;
+    width: 289px;
+    height: 652px;
+    left: 120px;
+    top: 265px;
+    background: #FFFFFF;
+ }
+
+ .danca{
+    position: absolute;
+    width: 289px;
+    height: 652px;
+    left: 680px;
+    top: 265px;
+    background: #FFFFFF;
+ }
+
+ .lutas {
+    position: absolute;
+    width: 289px;
+    height: 652px;
+    left: 1200px;
+    top: 265px;
+    background: #FFFFFF;
+ }
+
+ .h1modalidades {
+    position: absolute;
+    width: 732px;
+    height: 73px;
+    left: 470px;
+    top: 93px;
+    font-family: 'Spicy Rice', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 88px;
+    color: #FFFFFF;
+ }
+
+ .frame1 {
+    position: absolute;
+    width: 289px;
+    height: 176px;
+    left: 0px;
+    top: 0px;
+    background: #000000;
+ }
+
+ .frame2 {
+    position: absolute;
+    width: 289px;
+    height: 176px;
+    left: 0px;
+    top: 0px;
+    background: #000000;
+ }
+
+ .frame3 {
+    position: absolute;
+    width: 289px;
+    height: 176px;
+    left: 0px;
+    top: 0px;
+    background: #000000;
+ }
+
+ .h1frame {
+    position: absolute;
+    width: 228px;
+    height: 88px;
+    left: 44px;
+    top: 55px;
+    font-family: 'Spicy Rice', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 69px;
+    color: #DACC3E;
+ }
+ 
+ .h1frame2 {
+    position: absolute;
+    width: 319px;
+    height: 60px;
+    left: 59px;
+    top: 58px;
+    font-family: 'Spicy Rice';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 69px;
+    color: #FFFFFF;
+ }
+
+ .h1frame3 {
+    position: absolute;
+    width: 210px;
+    height: 41px;
+    left: 79px;
+    top: 56px;
+    font-family: 'Spicy Rice';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 69px;
+    color: #DACC3E;
+ }
+
+ .textonat {
+    position: absolute;
+    width: 236px;
+    height: 373px;
+    left: 27px;
+    top: 210px;
+    font-family:'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+    text-align: justify;
+}
+
+.textodanca {
+    position: absolute;
+    width: 236px;
+    height: 373px;
+    left: 27px;
+    top: 210px;
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+}
+
+.textoluta {
+    position: absolute;
+    width: 236px;
+    height: 373px;
+    left: 27px;
+    top: 210px;
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+}
+
+.professores {
+    position: relative;
+    width: 100%;
+    height: 1300px;
+    top:2000px;
+    background: #D3F3EE;
+}
+
+.h1prof {
+    position: absolute;
+    width: 1006px;
+    height: 169px;
+    left: 350px;
+    top: 93px;
+    font-family: 'Spicy Rice';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 88px;
+    color: #000000;
+}
+
+.box1 {
+    position: absolute;
+    width: 313px;
+    height: 622px;
+    left: 118px;
+    top: 293px;
+    mix-blend-mode: normal;
+    border: 10px solid #D71313;
+    box-sizing: border-box;
+}
+
+.box2 {
+    position: absolute;
+    width: 313px;
+    height: 622px;
+    left: 650px;
+    top: 293px;
+    mix-blend-mode: normal;
+    border: 10px solid #D71313;
+    box-sizing: border-box;
+}
+
+.box3 {
+    position: absolute;
+    width: 313px;
+    height: 622px;
+    left: 1200px;
+    top: 293px;
+    mix-blend-mode: normal;
+    border: 10px solid #D71313;
+    box-sizing: border-box;
+}
+
+.retangulo1 {
+    position: absolute;
+    width: 293px;
+    height: 92px;
+    left: 0px;
+    top: 0px;
+    background: #C4C4C4;
+}
+
+.retangulo2{
+    position: absolute;
+    width: 293px;
+    height: 92px;
+    left: 0px;
+    top: 0px;
+    background: #C4C4C4;
+}
+
+.retangulo3{
+    position: absolute;
+    width: 293px;
+    height: 92px;
+    background: #C4C4C4;
+}
+
+.h1ret{
+    position: absolute;
+    width: 219px;
+    height: 66px;
+    left: 62px;
+    top: 15px;
+    font-family: Spicy Rice;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 66px;
+    color: #000000;
+}
+
+.h2ret {
+    position: absolute;
+    width: 231px;
+    height: 70px;
+    left: 65px;
+    top: 15px;
+    font-family: Spicy Rice;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 66px;
+    color: #BC2C1A;
+}
+
+.h3ret {
+    position: absolute;
+    width: 219px;
+    height: 66px;
+    left: 62px;
+    top: 15px;
+    font-family: Spicy Rice;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 66px;
+    color: #000000;
+}
+
+.marcos1 {
+    position: absolute;
+    width: 293px;
+    height: 510px;
+    top: 92px;
+}
+
+.marcos2 {
+    position: absolute;
+    width: 293px;
+    height: 510px;
+    top: 92px;
+}
+
+.marcos3{
+    position: absolute;
+    width: 293px;
+    height: 510px;
+    top: 92px;
+}
+
+.planos {
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    top:1700px;
+    background: #221B1B;
+}
+
+.h1plano {
+    position: absolute;
+    width: 816px;
+    height: 149px;
+    left: 550px;
+    top: 91px;
+    font-family: Spicy Rice;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 88px;
+    color: #FFFFFF;
+}
+
+.boxtotal1 {
+    position: absolute;
+    width: 289px;
+    height: 652px;
+    left: 179px;
+    top: 240px;
+    background: #FFFFFF;
+}
+
+.boxpreto1 {
+    position: absolute;
+    width: 289px;
+    height: 140px;
+    left: 0px;
+    top: 0px;
+    background: #000000;
+}
+
+.subbox1 {
+    position: absolute;
+    width: 197px;
+    height: 88px;
+    left: 46px;
+    top: 90px;
+    background: #DACC3E;
+}
+
+.boxtotal2 {
+    position: absolute;
+    width: 289px;
+    height: 652px;
+    left: 680px;
+    top: 240px;
+    background: #FFFFFF;
+}
+
+.boxpreto2 {
+    position: absolute;
+    width: 289px;
+    height: 140px;
+    left: 0px;
+    top: 0px;
+    background: #000000;
+}
+
+.subbox2 {
+    position: absolute;
+    width: 197px;
+    height: 88px;
+    left: 46px;
+    top: 90px;
+    background: #DACC3E;
+}
+
+.boxtotal3 {
+    position: absolute;
+    width: 289px;
+    height: 652px;
+    left: 1200px;
+    top: 240px;
+    background: #FFFFFF;
+}
+
+.boxpreto3 {
+    position: absolute;
+    width: 289px;
+    height: 140px;
+    left: 0px;
+    top: 0px;
+    background: #000000;
+}
+
+.subbox3 {
+    position: absolute;
+    width: 197px;
+    height: 88px;
+    left: 46px;
+    top: 90px;
+    background: #DACC3E;
+}
+
+.preco1{
+    position: absolute;
+    width: 129px;
+    height: 50px;
+    left: 78px;
+    top: 114px;
+    font-family: 'Spicy Rice';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.preco2{
+    position: absolute;
+    width: 129px;
+    height: 50px;
+    left: 78px;
+    top: 114px;
+    font-family: 'Spicy Rice';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.preco3{
+    position: absolute;
+    width: 129px;
+    height: 50px;
+    left: 78px;
+    top: 114px;
+    font-family: 'Spicy Rice';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.textopreco1 {
+    position: absolute;
+    width: 236px;
+    height: 337px;
+    left: 37px;
+    top: 232px;
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+}
+
+.textopreco2 {
+    position: absolute;
+    width: 236px;
+    height: 337px;
+    left: 37px;
+    top: 232px;
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+}
+
+.textopreco3 {
+    position: absolute;
+    width: 236px;
+    height: 337px;
+    left: 37px;
+    top: 232px;
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+}
+
+.btn1 {
+    position: absolute;
+    width: 152px;
+    height: 51px;
+    left: 245px;
+    top: 926px;
+    background: #BC2C1A;
+}
+
+.btn2 {
+    position: absolute;
+    width: 152px;
+    height: 51px;
+    left: 750px;
+    top: 926px;
+    background: #BC2C1A;
+}
+
+.btn3 {
+    position: absolute;
+    width: 152px;
+    height: 51px;
+    left: 1280px;
+    top: 926px;
+    background: #BC2C1A;
+}
+
+.rodape {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background: #AB2020;
+    top: 1100px;
+}
+
+.textrodape {
+    position: absolute;
+    width: 1131px;
+    height: 63px;
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 53px;
+    color: #FFFFFF;
+    top: 30px;
+    margin-left: 10px;
+}
+
+.h2rodape {
+    position: absolute;
+    width: 1131px;
+    height: 63px;
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 53px;
+    color: #DACC3E;
+    top: 70px;
+    margin-left: 10px;
+}
+
+.rodape-imagem2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 30px;
+    left: 430px;
+}
+
+.rodape-imagem3 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 30px;
+    left: 500px;
+}
+
+.rodape-imagem4 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 30px;
+    left: 570px;
+}
+
+.a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
