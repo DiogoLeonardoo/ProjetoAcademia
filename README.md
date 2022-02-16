@@ -15,3 +15,5 @@
 <p>💾 Demonstrando domínio em seções e na organização de um site </p>
 <p>💾 Uso do framework Bootstrap, desenvolvendo responsividade em sua criação </p>
 <p>💾 Uso do framework Jquery, aplicando efeitos e animações interativas</p>
+
+OBS: Site em construção....
